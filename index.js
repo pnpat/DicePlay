@@ -1,4 +1,4 @@
-var name = prompt("Enter your name");
+var name  = prompt("Enter your name");
 var randomNumber1 = Math.floor(Math.random() * 6) + 1;
 var dice1Image = "images/dice" + randomNumber1 + ".png";
 var player1 = document.querySelectorAll("img")[0];
