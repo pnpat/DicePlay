@@ -1,4 +1,4 @@
-// var name1 = prompt("Enter your name");
+var name = prompt("Enter your name");
 var randomNumber1 = Math.floor(Math.random() * 6) + 1;
 var dice1Image = "images/dice" + randomNumber1 + ".png";
 var player1 = document.querySelectorAll("img")[0];
@@ -10,9 +10,9 @@ var player2 = document.querySelectorAll("img")[1];
 player2.setAttribute("src",dice2Image);
 
 if (randomNumber1 > randomNumber2){
-  document.querySelector("h1").innerHTML = "Player1 won";
+  document.querySelector("h1").innerHTML = name + " won";
 } else if (randomNumber2 > randomNumber1){
-  document.querySelector("h1").innerHTML = "Player2 won";
+  document.querySelector("h1").innerHTML = "Computer won";
 } else {
   document.querySelector("h1").innerHTML = "Draw !";
 }
